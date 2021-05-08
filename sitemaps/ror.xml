@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for https://stephanefou.github.io/Fofoustephane_4_08052021/</title>
+  <link>https://stephanefou.github.io/Fofoustephane_4_08052021/</link>
+
+<item>
+     <link>https://stephanefou.github.io/Fofoustephane_4_08052021/</link>
+     <title>.</title>
+     <description>.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://stephanefou.github.io/Fofoustephane_4_08052021/index.html</link>
+     <title>.</title>
+     <description>.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://stephanefou.github.io/Fofoustephane_4_08052021/page2.html</link>
+     <title>page2</title>
+     <description>page2</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
