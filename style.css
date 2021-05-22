@@ -17,6 +17,16 @@ a:hover {
     text-decoration: none;
     cursor: pointer;
 }
+/*----------------------------*/
+.focused {
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+.focused:focus { 
+    border: 2px solid #303030;
+    border-radius: 10px;
+} /*creer une bordure bougera notre element au focus si l'element n'a pas dejà cette bordure (caché)*/
+/*----------------------------*/
 
 #page-loading-blocs-notifaction {
     position: fixed;
@@ -98,15 +108,15 @@ a:hover {
 .b-parallax {
     background-attachment: fixed;
 }
-
+/*----------------------------
 .d-bloc {
     color: rgba(255, 255, 255, .7);
 }
-
+----------------------------*/
 .d-bloc button:hover {
     color: rgba(255, 255, 255, .9);
-}
-
+}/*-------------------------*/
+/*----------------------------
 .d-bloc .icon-round,
 .d-bloc .icon-square,
 .d-bloc .icon-rounded,
@@ -114,11 +124,11 @@ a:hover {
 .d-bloc .icon-semi-rounded-b {
     border-color: rgba(255, 255, 255, .9);
 }
-
+---------------------------*//*
 .d-bloc .divider-h span {
     border-color: rgba(255, 255, 255, .2);
 }
-
+---------------------------*/
 .d-bloc .a-btn,
 .d-bloc .navbar a,
 .d-bloc .navbar-brand,
@@ -133,9 +143,9 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: #303030;/**/
 }
-
+/*---------------------------*/
 .d-bloc .a-btn:hover,
 .d-bloc .navbar a:hover,
 .d-bloc .navbar-brand:hover,
@@ -150,8 +160,53 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: rgba(255, 255, 255, 1);
+    color: #B65E41 /*#EEC66C*/;
 }
+/*---------------------------*/
+.d-bloc a .icon-sm,
+.d-bloc a .icon-md,
+.d-bloc a .icon-lg,
+.d-bloc a .icon-xl {
+  border: solid 2px transparent;
+  border-radius: 50%;
+  padding: 1rem;
+}/* avant--------------*/
+
+.d-bloc a .fa.fa-twitter {
+    padding-right: 11px;
+    padding-left: 11px;
+}
+
+.d-bloc a .fa.fa-facebook {
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.d-bloc a .fa.fa-dribbble, .d-bloc a .fa.fa-instagram {
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.d-bloc a:hover .icon-sm,
+.d-bloc a:hover .icon-md,
+.d-bloc a:hover .icon-lg,
+.d-bloc a:hover .icon-xl {
+  border: solid 2px;
+  /*border-radius: 50%;
+  padding: 1rem; plus besoin de le remettre définit en haut*/
+  transition: 300ms ease-in-out;
+}/* avant--------------*/
+
+.d-bloc a:focus .icon-sm,
+.d-bloc a:focus .icon-md,
+.d-bloc a:focus .icon-lg,
+.d-bloc a:focus .icon-xl {
+  border: solid 2px;
+  /*border-radius: 50%;
+  padding: 1rem;*/
+  transition: 300ms ease-in-out;
+  color: #B65E41;
+}/* avant--------------*/
 
 .d-bloc .navbar-toggle .icon-bar {
     background: rgba(255, 255, 255, 1);
@@ -304,9 +359,15 @@ a:hover {
 .navbar-brand img {
     max-height: 200px;
     margin: 0 5px 0 0;
-    display: inline;
+    display: inline-block;/* changement-------*/
+    height: 40px;
+    border-bottom: #fff solid 3px;
 }
-
+/*-----------------------*/
+.navbar-brand img:hover {
+    border-bottom: #000000 solid 3px /*obligé de remettre les valeurs même répétitive sinon l'élément n'est pas fixe ce qui veut dire que les valeurs sont choisies par défaut et peuvent différer*/;
+}
+/*-----------------------*/
 .navbar-brand img[src$=svg] {
     min-width: 100px;
 }
@@ -321,7 +382,15 @@ a:hover {
     float: right;
     z-index: 1;
 }
-
+/*-----------------------*/
+.navbar-nav li {
+    border-bottom: solid 2px white;
+  }
+  
+  .navbar-nav li:hover {
+    border-bottom: solid 2px;
+  }
+/*------ a remonter??? concerne hover nav-------------*/
 .nav > li {
     float: left;
     margin-top: 4px;
@@ -372,7 +441,7 @@ a:hover {
     }
     .nav > li .dropdown-menu a,
     .nav > li .dropdown-menu a:hover {
-        color: #484848;
+        color: #303030;
     }
     .nav-invert .site-navigation {
         left: 0;
@@ -463,11 +532,32 @@ nav .caret {
 button {
     outline: none!important;
 }
+/*-----------------------*/
+.purpose {
+    font-size: 22px;
+    margin: auto;
+    width: 65%;
+  }
+  
+  .quote {
+    /*display: block;
+    margin: auto;*/
+    quotes: none;
+    font-size: 20px;
+    font-style: italic;
+    /*width: 85%;*/
+    color: #303030;
+  }
+  
+  cite {
+    font-style: normal;
+    font-size: initial;
+  }
 
 .btn-rd {
     border-radius: 40px;
 }
-
+/*---------------------------*/
 .btn-clean {
     border: 1px solid rgba(0, 0, 0, .08);
     border-bottom-color: rgba(0, 0, 0, .1);
@@ -509,7 +599,7 @@ button {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
 }
-
+/*-------------------*/
 .scrollToTop {
     width: 40px;
     height: 40px;
@@ -519,8 +609,17 @@ button {
     opacity: 0;
     z-index: 500;
     transition: all .3s ease-in-out;
+    background-color: #1B75BC;/*TON BLEUUUUUUUUU*/
+    border: solid 2px white ;
 }
-
+/*-----------------------------------*/
+.scrollToTop:hover {
+    background-color: #EEC66C;
+  }
+  
+  .scrollToTop:focus {
+    background-color: #EEC66C;
+  }
 .scrollToTop span {
     margin-top: 6px;
 }
@@ -559,7 +658,14 @@ a[data-lightbox]:hover img {
     -webkit-animation-fill-mode: none;
     animation-fill-mode: none;
 }
-
+/*-----------------*/
+a[data-lightbox]:focus img {
+    opacity: 0.6;
+    -webkit-animation-fill-mode: none;
+    animation-fill-mode: none;
+    border: black solid 5px;
+  }
+  /*---------------------*/
 #lightbox-modal {
     display: flex;
     align-items: center;
@@ -651,7 +757,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #303030!important;
 }
 
 .container {
@@ -677,7 +783,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 16px;
 }
 
 .tight-width-whitespace {
@@ -700,12 +806,12 @@ p {
 }
 
 .social {
-    max-width: 400px;
+    max-width: 355px;
     margin: auto auto auto auto;
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 28px;
     line-height: 1.4em;
 }
 
@@ -713,7 +819,7 @@ h3 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #333333!important;
+    color: #303030!important;
 }
 
 .med-width-whitespace {
@@ -723,22 +829,30 @@ h3 {
 }
 
 h1 {
-    color: #333333!important;
+    color: #303030!important;
 }
 
 h4 {
-    color: #333333!important;
+    color: #303030!important;
 }
 
 .icons {
     margin-bottom: 14px;
     margin-top: 24px;
 }
-
+/*----------------PAS COMPRIS INTERET-------*/
 .white {
     color: #FFFFFF!important;
 }
 
+#white {
+    color: #ffffff !important;
+}
+  
+#white:hover {
+    color: #303030 !important;
+}
+/*----------------*/
 .portfolio-thumb {
     margin-bottom: 24px;
 }
@@ -747,17 +861,27 @@ h4 {
     margin-bottom: 44px;
     margin-top: 50px;
 }
-
+/*---------------------*/
+.portfolio-row .portfolio-thumb{
+    margin: auto;
+    /*margin-right: auto;*/
+}
+/*--------------*/
 .avatar {
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
 }
-
+/*-------------------*/
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: #000000;
     padding: 40px 40px 40px 40px;
 }
 
-.bold-link {
+.grey-background {
+  background-color: #303030;
+    padding: 40px 40px 40px 40px;
+}
+/*----------------*/
+.bold-link {/*IIIINTROUVABLE*/
     font-weight: 900;
     text-decoration: underline!important;
 }
@@ -765,30 +889,50 @@ h4 {
 .bgc-white {
     background-color: #FFFFFF;
 }
-
+/*---------DONNE COULEUR BLEU AU RAFFRAICHISSEMENT-----------------INUTILE MAIS BON...----*/
 .bgc-dark-slate-blue {
     background-color: #364577;
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: /*#F3976C #B65E41*/ #fff;
+}
+
+.bgc-atomic-tangerine--color {
+    background-color: #B65E41;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: /*#F3976C*/ #B65E41!important;
 }
-
+/*-------------------*/
+.tc-image {
+    color: #ffffff !important;
+  }
+/*----------------------------*/
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: /*#F3976C*/ #B65E41;
     color: #FFFFFF!important;
+    border: solid 2px transparent;/*----------------*/
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
+    background: #EEC66C!important;
+    color: #303030!important;
+    border: solid 2px white;
 }
 
-.ltc-white {
+.btn-atomic-tangerine:focus {
+  background: #EEC66C !important;
+  color: #303030 !important;
+  border: solid 2px white;
+}
+
+/*utile?????#bloc-1-hero {
+    min-height: 476.033px;
+}*/
+
+.ltc-white {/*IIIIIINTROUVABLE--------*/
     color: #FFFFFF!important;
 }
 
@@ -797,11 +941,11 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: /*#F3976C*/ #B65E41!important;
 }
 
 .ltc-atomic-tangerine:hover {
-    color: #c27956!important;
+    color: /*#F3976C*/ #B65E41!important;
 }
 
 .icon-dark-slate-blue {
@@ -813,9 +957,9 @@ h4 {
     background-image: url("img/dots-bg.png");
 }
 
-.bg-lines-h2-bg {
+/*.bg-lines-h2-bg {
     background-image: url("img/lines-h2-bg.png");
-}
+} /*Est-ce utile?*/
 
 .bg-banniere {
     background-image: url("img/la-chouette-agence-banniere.jpg");
@@ -841,20 +985,20 @@ h4 {
 
 @media (max-width: 992px) and (min-width: 768px) {
     .navbar .nav {
-        max-width: 80%
+        max-width: 80%;
     }
     .nav-center.navbar .nav {
-        max-width: 100%
+        max-width: 100%;
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -902,8 +1046,8 @@ h4 {
     h6,
     p,
     #disqus_thread {
-        padding-left: 10px!important;
-        padding-right: 10px!important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
     }
     .b-parallax {
         background-attachment: scroll;
@@ -911,7 +1055,7 @@ h4 {
     .navbar .nav {
         padding-top: 0;
         border-top: 1px solid rgba(0, 0, 0, .2);
-        float: none!important;
+        float: none !important;
     }
     .navbar.row {
         margin-left: 0;
@@ -936,7 +1080,7 @@ h4 {
     }
     .dropdown .dropdown a .caret {
         float: none;
-        margin: 5px 0 0 10px!important;
+        margin: 5px 0 0 10px !important;
         border: 4px solid black;
         border-bottom-color: transparent;
         border-right-color: transparent;
