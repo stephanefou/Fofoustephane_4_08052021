@@ -609,7 +609,7 @@ button {
     opacity: 0;
     z-index: 500;
     transition: all .3s ease-in-out;
-    background-color: #1B75BC;/*TON BLEUUUUUUUUU*/
+    background-color: #B65E41;
     border: solid 2px white ;
 }
 /*-----------------------------------*/
@@ -757,7 +757,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #303030!important;
+    color: #303030 !important;
 }
 
 .container {
@@ -784,6 +784,11 @@ a {
 
 p {
     font-size: 16px;
+}
+
+.prise-contact {
+    margin: 0 0 10px;
+    color: #303030!important;
 }
 
 .tight-width-whitespace {
@@ -903,12 +908,14 @@ h4 {
 }
 
 .tc-white {
-    color: /*#F3976C*/ #B65E41!important;
+    color: #B65E41!important;
+    font-weight: 600;
 }
 /*-------------------*/
 .tc-image {
-    color: #ffffff !important;
-  }
+    color: #fff!important;
+}
+
 /*----------------------------*/
 .btn-atomic-tangerine {
     background: /*#F3976C*/ #B65E41;
@@ -967,6 +974,18 @@ h4 {
 
 .bg-presentation {
     background-image: url("img/image-de-presentation.bmp");
+}
+
+#form_1 {
+    font-size: 16px;
+}
+    
+#form_1 input, #form_1 textarea {
+    border: 2px solid;
+}
+    
+#form_1 input:focus, #form_1 textarea:focus {
+    box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 1), 0px 0px 3px 3px rgba(27, 117, 188, 0.5);
 }
 
 @media (max-width: 1024px) {
