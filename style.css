@@ -546,7 +546,7 @@ nav .caret {
     font-weight: 600!important;
 }
 
-.mg-md.text-center {
+#text-center {
     color: #B65E41!important;
     font-size: 20px;
 }
@@ -1017,7 +1017,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 #form_1 {
