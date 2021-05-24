@@ -733,6 +733,7 @@ a[data-lightbox]:focus img {
     left: 15px;
     right: 15px;
     bottom: 5px;
+    text-align: center;
 }
 
 .close-lightbox {
