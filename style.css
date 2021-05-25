@@ -1234,6 +1234,25 @@ h4 {
         width: 180px;
         height: 320px;
     }
+
+    .row.row-no-gutters.social {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1 1 177.5px;
+    }
+
+    .row.row-no-gutters.social div.col-sm-3 {
+        text-align: start;
+        width: 50%;
+    }
+
+    footer div.text-center {
+        text-align: start;
+    }
+
+    .social {
+        font-size: larger;
+    }
 }
 
 @media (max-width: 400px) {
