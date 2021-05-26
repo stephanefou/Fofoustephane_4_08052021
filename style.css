@@ -897,13 +897,15 @@ h4 {
 #white {
     color: #ffffff !important;
 }
-  
+
 #white:hover {
     color: #303030 !important;
 }
 /*----------------*/
 .portfolio-thumb {
     margin-bottom: 24px;
+    width: 270px;
+    height: 270px;
 }
 
 .portfolio-row {
@@ -1331,4 +1333,9 @@ h4 {
 .image-resize-mode {
     width: 150px;
     height: 150px;
+}
+
+.navbar-logo {
+    width: 200px;
+    height: 40px;
 }
