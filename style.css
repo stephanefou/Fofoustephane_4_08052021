@@ -1315,10 +1315,20 @@ h4 {
         padding-left: 0;
         padding-right: 0;
     }
+
+    .image-resize-mode {
+        width: 300px;
+        height: 300px;
+    }
 }
 
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+
+.image-resize-mode {
+    width: 150px;
+    height: 150px;
 }
