@@ -1072,7 +1072,7 @@ h4 {
 }
 
 @media (max-width: 1032px) {
-    div.container.bloc-lg > div.row {
+    div.container.bloc-lg > div.row-responsive {
         display: flex;
         justify-content: space-between;
     }
@@ -1250,7 +1250,7 @@ h4 {
         height: 320px;
     }
 
-    div.container.bloc-lg > div.row {
+    div.container.bloc-lg > div.row-responsive {
         display: block;
     }/*necessaire d'être remis en block par rapport à la modif en media max 1032px*/
 
@@ -1335,7 +1335,7 @@ h4 {
     height: 150px;
 }
 
-.navbar-logo {
+img.navbar-logo {
     width: 200px;
     height: 40px;
 }

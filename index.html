@@ -48,7 +48,8 @@
 				<div class="container bloc-sm">
 					<nav class="navbar row">
 						<div class="navbar-header">
-							<a class="navbar-brand focused" href="index.html" nofollow><img src="img/la-chouette-agence.png" class="navbar-logo" alt="logo de La chouette agence" /></a> <!--enlève la classe focused et tu verras un défaut par rapport à la navbar de la page d'accueil-->
+							<a class="navbar-brand focused" href="index.html" nofollow><img src="img/la-chouette-agence.png" class="navbar-logo" alt="logo de La chouette agence" width="200px" height="40px"/></a> <!--width et height for reduce layouts shift pour la performance lighthouse-->
+							<!--enlève la classe focused et tu verras un défaut par rapport à la navbar de la page d'accueil-->
 							<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 								<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 							</button>
@@ -80,7 +81,7 @@
 			<div class="container bloc-lg">
 				<div class="row tight-width-whitespace grey-background">
 					<div class="col-sm-12">
-						<img src="img/logo.png" srcset="img/logo.png 800w, img/logo-device.png 480w" sizes="(max-width: 480px) 300px, (max-width: 1366px) 150px" class="center-block image-resize-mode" alt="logo de La chouette agence" />
+						<img src="img/logo.png" srcset="img/logo.png 800w, img/logo-device.png 480w" sizes="(max-width: 480px) 300px, (max-width: 1366px) 150px" class="center-block image-resize-mode" alt="logo de La chouette agence" /> <!--Stylé-concept d'image adaptative-->
 						<h1 class="text-center hero-bloc-text tc-image ">
 							La chouette agence
 							<br>
