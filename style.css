@@ -21,6 +21,7 @@ a:hover {
 .focused {
     border: 2px solid #fff;
     border-radius: 10px;
+    
 }
 .focused:focus { 
     border: 2px solid #303030;
@@ -579,22 +580,22 @@ button {
     font-size: 22px;
     margin: auto;
     width: 65%;
-  }
+}
   
-  .quote {
-    /*display: block;
-    margin: auto;*/
-    quotes: none;
-    font-size: 20px;
-    font-style: italic;
-    /*width: 85%;*/
-    color: #303030;
-  }
-  
-  cite {
-    font-style: normal;
-    font-size: initial;
-  }
+.quote {
+/*display: block;
+margin: auto;*/
+quotes: none;
+font-size: 20px;
+font-style: italic;
+/*width: 85%;*/
+color: #303030;
+}
+
+cite {
+font-style: normal;
+font-size: initial;
+}
 
 .btn-rd {
     border-radius: 40px;
@@ -653,16 +654,16 @@ button {
     z-index: 500;
     transition: all .3s ease-in-out;
     background-color: #B65E41;
-    border: solid 2px white ;
+    border: 2px solid white ;
 }
 /*-----------------------------------*/
 .scrollToTop:hover {
     background-color: #EEC66C;
-  }
+}
   
-  .scrollToTop:focus {
-    background-color: #EEC66C;
-  }
+.scrollToTop:focus {
+background-color: #EEC66C;
+}
 .scrollToTop span {
     margin-top: 6px;
 }
@@ -1321,6 +1322,14 @@ h4 {
     .image-resize-mode {
         width: 300px;
         height: 300px;
+    }
+
+    .bloc-lg {
+        padding: 0;
+    }
+
+    .purpose {
+        width: 100%;
     }
 }
 
